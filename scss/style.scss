@@ -1,11 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
 
-@import './variable';
-@import './header';
-@import './home';
-@import './category';
-@import './about';
+@import './variable'; // 변수 
+
+// 섹션별 스타일
+@import './header'; 
+@import './home'; 
+@import './category'; 
+@import './about'; 
+@import './shop'; 
+@import './gallery'; 
+@import './team'; 
 
 html{
     font-size:62.5%;
@@ -38,15 +43,27 @@ html::-webkit-scrollbar-thumb{
     list-style: none;
 }
 
-main{
-    padding:0 9%;
-}
+// 공통 스타일
 
 section{
-    padding:5rem 0;
+    padding:5rem 9%;
 }
 
-// 공통 스타일
+.heading{ // h1 제목 태그
+    text-align: center;
+    margin-bottom: 4rem;
+    h1{
+        font-size:3.5rem;
+        color:$black;
+    }
+    p{
+        max-width: 50rem;
+        margin:1rem auto;
+        font-size:1.5rem;
+        line-height: 1.6;
+        color:$light-color;
+    }
+}
 
 .btn{ // 버튼
     display: inline-block;
@@ -71,12 +88,8 @@ section{
 
     header{ padding:1.5rem 2rem; }
 
-    main{ 
-        padding:0 2rem;
-    }
-
     section{
-        padding:3rem 0;
+        padding:0 2rem;
     }
 
 }

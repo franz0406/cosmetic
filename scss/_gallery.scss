@@ -1,0 +1,23 @@
+#gallery{
+    background: $light-bg;
+    .light_box{
+        @include grid(31rem);
+        a{
+            height:30rem;
+            overflow: hidden;
+            border:1rem solid $white;
+            box-shadow: $box-shadow;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+}

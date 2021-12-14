@@ -17,28 +17,68 @@ window.addEventListener("load", function(){
     
     
     // 홈 영역 슬라이드 
-    const slides = this.document.querySelectorAll(".slide");
+    const bannerSlide = this.document.querySelectorAll("#home > .slide");
     const nextSlideBtn = this.document.querySelectorAll(".fa-angle-right");
     const prevSlideBtn = this.document.querySelectorAll(".fa-angle-left");
     let slideIdx = 0;
 
     nextSlideBtn.forEach(item => { // 다음 슬라이드
         item.addEventListener("click", () => {
-            slides[slideIdx].classList.remove("on");
-            slideIdx = (slideIdx + 1) % slides.length;
-            slides[slideIdx].classList.add("on");
+            bannerSlide[slideIdx].classList.remove("on");
+            slideIdx = (slideIdx + 1) % bannerSlide.length;
+            bannerSlide[slideIdx].classList.add("on");
         });
     })
     prevSlideBtn.forEach(item => { // 이전 슬라이드
         item.addEventListener("click", () => {
-            slides[slideIdx].classList.remove("on");
-            slideIdx = (slideIdx - 1 + slides.length) % slides.length;
-            slides[slideIdx].classList.add("on");
+            bannerSlide[slideIdx].classList.remove("on");
+            slideIdx = (slideIdx - 1 + bannerSlide.length) % bannerSlide.length;
+            bannerSlide[slideIdx].classList.add("on");
         });
     })
 
-        
+    // 어바웃 영역 슬라이더
     
+    const swiper = new Swiper(".products-slider", {
+        
+        loop:true,        
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        autoplay: {
+            delay: 3000,
+        },
+        
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            450: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+        }
+        
+    });
+    
+    // 갤러리 영역 라이트박스
+    const lightBox = this.document.querySelector(".light_box");
+     
+    lightGallery(lightBox,{
+        thumbnail: true,
+    });
     
     window.addEventListener("scroll", () => {
         navBar.classList.remove("on");
