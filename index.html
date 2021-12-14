@@ -4,9 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmetic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/scropt.js"></script>
+    <title>Cosmetic - Girly</title>
 </head>
 <body>
+    <!--헤더-->
+    <header>
+        <a href="#home" class="logo"><img src="./images/logo.png" alt="cosmetic logo image"></a>
+        <!--검색 폼-->
+        <form action="#" class="search_form"> 
+            <input type="search" name="srch" id="srch" placeholder="search here..">
+            <label for="srch" class="fas fa-search"></label>
+        </form>
+        <!--아이콘-->
+        <div class="icons"> 
+            <div id="menu_btn" class="fas fa-bars"></div>
+            <div id="search_btn" class="fas fa-search"></div>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
     
+    <!-- GNB -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#team">team</a></li>
+            <li><a href="#arrivals">arrivals</a></li>
+            <li><a href="#blogs">blogs</a></li>
+        </ul>
+        <div id="close_nav" class="fas fa-times"></div> <!--닫기버튼-->
+    </nav>
+
+    <!-- 메인 -->
+    <main>
+        <!-- home 영역 -->
+        <section id="home">
+
+            <div class="slide on"> <!-- 슬라이드 1 -->
+                <div class="content">
+                    <img src="./images/content-img-1.png" alt="">
+                    <span>new arrivals 2022</span>
+                    <h3>cosmetics</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left"></div>
+                        <div class="fas fa-angle-right"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./images/home-img-1.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide"> <!-- 슬라이드 2 -->
+                <div class="content">
+                    <img src="./images/content-img-2.png" alt="">
+                    <span>new arrivals 2022</span>
+                    <h3>accessories</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left"></div>
+                        <div class="fas fa-angle-right"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./images/home-img-2.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide"> <!-- 슬라이드 3 -->
+                <div class="content">
+                    <img src="./images/content-img-3.png" alt="">
+                    <span>new collections</span>
+                    <h3>skin care</h3>
+                    <a href="#" class="btn">read more</a>
+                    <div class="controls">
+                        <div class="fas fa-angle-left"></div>
+                        <div class="fas fa-angle-right"></div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./images/home-img-3.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- category 영역 -->
+        <section id="category">
+
+            <a href="#" class="box">
+                <img src="./images/category-1.png" alt="">
+                <span>cosmetics</span>
+            </a>
+
+            <a href="#" class="box">
+                <img src="./images/category-2.png" alt="">
+                <span>makeup</span>
+            </a>
+
+            <a href="#" class="box">
+                <img src="./images/category-3.png" alt="">
+                <span>powder</span>
+            </a>
+
+            <a href="#" class="box">
+                <img src="./images/category-4.png" alt="">
+                <span>lotions</span>
+            </a>
+
+            <a href="#" class="box">
+                <img src="./images/category-5.png" alt="">
+                <span>lipstick</span>
+            </a>
+
+            <a href="#" class="box">
+                <img src="./images/category-6.png" alt="">
+                <span>mascara</span>
+            </a>
+
+        </section>
+
+        <!-- about 영역 -->
+        <section id="about">
+
+            <div class="content">
+                <span>why choose us?</span>
+                <h3>makeup makes difference</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque ducimus qui nulla itaque asperiores reprehenderit quo obcaecati aspernatur. Sequi corrupti, eveniet nisi expedita molestiae voluptas. Hic inventore minus consequatur quibusdam!</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>

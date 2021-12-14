@@ -1,0 +1,21 @@
+// 색상
+
+$pink : #e84393;
+$black : #222;
+$white : #fff;
+$light-bg : #f5f5f5;
+$light-color : #777;
+$light-pink : #fce9f2;
+
+// 공통 스타일
+
+$border : 0.2rem solid $black;
+$box-shadow : 0 0.5rem 1rem rgba(0,0,0, 0.1);
+
+// 믹스인
+
+@mixin grid($value) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+    gap:2rem;
+}

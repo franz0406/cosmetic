@@ -1,0 +1,31 @@
+#category{
+    @include grid(16rem);
+
+    .box{ // 카테고리 아이콘
+        padding:2rem;
+        border-radius:.5rem;
+        background: $light-bg;
+        text-align: center;
+        &:hover{
+            background: $black;
+
+            img{
+                filter: invert(1);
+            }
+            span{
+                color:$white;
+            }
+        }
+
+        img{ // 아이콘 이미지
+            height: 10rem;
+            margin-bottom: 1rem;
+        }
+
+        span{
+            display: block;
+            font-size:1.7rem;
+            color:$black;
+        }
+    }
+}
