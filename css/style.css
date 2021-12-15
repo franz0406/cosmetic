@@ -558,21 +558,9 @@ header #search_btn {
   text-decoration: line-through;
 }
 
-.swiper-pagination-bullet {
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: .6rem;
-}
-
-.swiper-pagination-bullet-active {
-  width: 2.2rem;
-  background: #e84393;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.swiper-button-next,
+.swiper-button-prev {
   color: #e84393;
-  font-size: 4rem;
   font-weight: bold;
 }
 
@@ -695,6 +683,347 @@ header #search_btn {
 #team .box_container .box .content p {
   font-size: 1.5rem;
   color: #e84393;
+}
+
+#review {
+  margin-top: 3rem;
+}
+
+#review .reviews_slider {
+  overflow-x: hidden;
+}
+
+#review .reviews_slider .slide {
+  width: 35rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+#review .reviews_slider .slide .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+#review .reviews_slider .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+#review .reviews_slider .slide .user h3 {
+  font-size: 2rem;
+  color: #222;
+}
+
+#review .reviews_slider .slide .user .stars i {
+  font-size: 1.5rem;
+  color: #e84393;
+}
+
+#review .reviews_slider .slide .user_txt {
+  position: relative;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 0.5rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: #777;
+  margin-top: 2rem;
+}
+
+#review .reviews_slider .slide .user_txt::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 2.7rem;
+  height: 2rem;
+  width: 2rem;
+  background: #f5f5f5;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#arrivals .slide {
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+#arrivals .slide:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#arrivals .slide .image {
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+}
+
+#arrivals .slide .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#arrivals .slide .content {
+  padding: 2rem;
+}
+
+#arrivals .slide .content p {
+  font-size: 2rem;
+  color: #222;
+  line-height: 2;
+  padding-bottom: .5rem;
+}
+
+#arrivals .slide .content .price {
+  font-size: 2rem;
+  color: #e84393;
+}
+
+#arrivals .slide .content .price span {
+  padding-left: 1rem;
+  color: #777;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+#service {
+  background: #f5f5f5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+#service .box {
+  border: 0.2rem solid #222;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+#service .box:hover {
+  background: #222;
+}
+
+#service .box:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#service .box:hover h3 {
+  color: #e84393;
+}
+
+#service .box:hover p {
+  color: #fce9f2;
+}
+
+#service .box img {
+  height: 8rem;
+  margin-bottom: 0.5rem;
+}
+
+#service .box h3 {
+  padding: 0.7rem 0;
+  font-size: 2rem;
+  color: #222;
+}
+
+#service .box p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 1.7;
+}
+
+#blogs .slide {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 0.5rem;
+}
+
+#blogs .slide:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#blogs .slide:hover .image .icons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#blogs .slide .image {
+  position: relative;
+  width: 100%;
+  height: 33rem;
+  overflow: hidden;
+}
+
+#blogs .slide .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#blogs .slide .image .icons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem;
+  background: #fce9f2;
+}
+
+#blogs .slide .image .icons a {
+  font-size: 1.5rem;
+  color: #222;
+}
+
+#blogs .slide .image .icons a:hover {
+  color: #e84393;
+}
+
+#blogs .slide .image .icons a i {
+  color: #e84393;
+  padding-right: .5rem;
+}
+
+#blogs .slide .content {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#blogs .slide .content h3 {
+  font-size: 2rem;
+  color: #222;
+}
+
+#blogs .slide .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #777;
+  font-size: 1.5rem;
+}
+
+footer {
+  padding: 5rem 9%;
+  background: #f5f5f5;
+}
+
+footer .box_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+footer .box_container .box h3 {
+  font-size: 2.2rem;
+  color: #222;
+  padding: 1rem 0;
+}
+
+footer .box_container .box .link {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+footer .box_container .box .link:hover {
+  color: #e84393;
+}
+
+footer .box_container .box .link:hover i {
+  padding-right: 2rem;
+}
+
+footer .box_container .box .link i {
+  padding-right: .5rem;
+  color: #e84393;
+}
+
+footer .box_container .box p {
+  font-size: 1.5rem;
+  color: #777;
+  padding: 1rem 0;
+}
+
+footer .box_container .box p i {
+  padding-right: .5rem;
+  color: #e84393;
+}
+
+footer .box_container .box .share {
+  margin-top: 2rem;
+}
+
+footer .box_container .box .share a {
+  height: 5rem;
+  width: 5rem;
+  background: #fff;
+  border: 0.2rem solid #222;
+  font-size: 2rem;
+  line-height: 4.5rem;
+  color: #222;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+footer .box_container .box .share a:hover {
+  background: #e84393;
+  color: #fff;
+}
+
+footer .box_container .box form .email {
+  width: 100%;
+  border: 0.2rem solid #222;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: #777;
+  text-transform: none;
+  margin: 1rem 0;
+}
+
+footer .credit {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-top: 0.2rem solid #222;
+  color: #222;
+}
+
+@media (max-width: 991px) {
+  footer {
+    padding: 0 2rem;
+  }
 }
 
 html {

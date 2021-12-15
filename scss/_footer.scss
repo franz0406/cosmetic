@@ -1,0 +1,87 @@
+footer{
+    padding:5rem 9%;
+    background: $light-bg;
+    .box_container{
+        @include grid(25rem);
+
+        .box{
+            h3{
+                font-size:2.2rem;
+                color:$black;
+                padding:1rem 0;
+            }
+            
+            .link{ // 링크 텍스트
+                display: block;
+                padding:1rem 0;
+                font-size:1.5rem;
+                color:$light-color;
+                &:hover{
+                    color:$pink;
+                    i{
+                        padding-right: 2rem;
+                    }
+                }
+                i{ // 아이콘
+                    padding-right:.5rem;
+                    color:$pink;
+                }
+            }
+            p{
+                font-size:1.5rem;
+                color:$light-color;
+                padding:1rem 0;
+                i{
+                    padding-right:.5rem;
+                    color:$pink;
+                }
+            }
+            .share{ // 소셜 아이콘
+                margin-top: 2rem;
+                a{
+                    height:5rem;
+                    width:5rem;
+                    background: $white;
+                    border:$border;
+                    font-size:2rem;
+                    line-height: 4.5rem;
+                    color:$black;
+                    text-align: center;
+                    margin-right: 0.5rem;
+                    &:hover{
+                        background: $pink;
+                        color:$white;
+                    }
+                }
+            }
+            form{ // 폼
+                .email{
+                    width:100%;
+                    border:$border;
+                    padding:1.2rem 1.4rem;
+                    font-size:1.6rem;
+                    color:$light-color;
+                    text-transform: none;
+                    margin: 1rem 0;
+                }
+            }
+        }
+    }
+    .credit{
+        margin-top: 2rem;
+        padding-top: 2rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border-top: $border;
+        color:$black;
+    }
+}
+
+@media (max-width:991px) {
+
+    footer{
+        padding:0 2rem;
+    }
+
+}

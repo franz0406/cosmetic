@@ -4,13 +4,11 @@
 @import './variable'; // 변수 
 
 // 섹션별 스타일
-@import './header'; 
-@import './home'; 
-@import './category'; 
-@import './about'; 
-@import './shop'; 
-@import './gallery'; 
-@import './team'; 
+@import './header', './home', './category', 
+        './about', './shop', './gallery', 
+        './team', './review', './arrivals', 
+        './service', './blogs', './footer';
+
 
 html{
     font-size:62.5%;

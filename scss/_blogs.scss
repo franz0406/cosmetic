@@ -1,0 +1,61 @@
+#blogs{
+
+    .slide{
+        box-shadow: $box-shadow;
+        margin-bottom: 0.5rem;
+        &:hover .image{
+            img{
+                transform: scale(1.1);
+            }
+            .icons{
+                transform: translateY(0);
+            }
+        }
+        .image{ // 이미지
+            position: relative;
+            width:100%;
+            height:33rem;
+            overflow: hidden;
+            img{
+                width:100%;
+                height:100%;
+                object-fit: cover;
+            }
+            .icons{ // 아이콘
+                position: absolute;
+                bottom:0; left:0; right:0;
+                transform: translateY(10rem);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding:1.5rem;                
+                background: $light-pink;
+                a{
+                    font-size:1.5rem;
+                    color:$black;
+                    &:hover{
+                        color:$pink;
+                    }
+                    i{
+                        color:$pink;
+                        padding-right:.5rem;
+                    }
+                }
+            }
+        }
+        .content{ //내용
+            text-align: center;
+            padding-top:1rem;
+            h3{
+                font-size:2rem;
+                color:$black;
+            }
+            p{
+                padding:1rem 0;
+                line-height: 2;
+                color:$light-color;
+                font-size:1.5rem;
+            }
+        }
+    }
+}

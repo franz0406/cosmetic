@@ -1,0 +1,49 @@
+#review{
+    margin-top: 3rem;
+    .reviews_slider{
+        overflow-x: hidden;
+        .slide{
+            width:35rem;
+            box-shadow: $box-shadow;
+            background-color: $white;
+            .user{
+                display: flex;
+                align-items: center;
+                gap:1rem;
+                img{ // 유저 이미지
+                    height:7rem;
+                    width:7rem;
+                    border-radius: 50%;
+                }
+                h3{ // 유저 이름
+                    font-size:2rem;
+                    color:$black;
+                }
+                .stars i{ // 별점 아이콘
+                    font-size:1.5rem;
+                    color:$pink
+                }
+            }
+            .user_txt{ 
+                position: relative;
+                padding:2rem;
+                background: $light-bg;
+                border-radius: 0.5rem;;
+                line-height: 1.6;
+                font-size:1.5rem;
+                color:$light-color;
+                margin-top: 2rem;
+                &::before{
+                    content:"";
+                    position: absolute;
+                    top: -1rem; left: 2.7rem;
+                    height:2rem;
+                    width:2rem;
+                    background: $light-bg;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+

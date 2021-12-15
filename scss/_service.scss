@@ -1,0 +1,36 @@
+#service{
+    background: $light-bg;
+    @include grid(31rem);
+    .box{
+        border:$border;
+        padding:2rem;
+        text-align: center;
+        background: $white;
+        &:hover{
+            background: $black;
+            img{
+                filter: invert(1);
+            }
+            h3{
+                color:$pink;
+            }
+            p{
+                color:$light-pink;
+            }
+        }
+        img{
+            height:8rem;
+            margin-bottom: 0.5rem;
+        }
+        h3{
+            padding:0.7rem 0;
+            font-size:2rem;
+            color:$black;
+        }
+        p{
+            font-size:1.5rem;
+            color:$light-color;
+            line-height: 1.7;
+        }
+    }
+}

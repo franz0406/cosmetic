@@ -37,9 +37,8 @@ window.addEventListener("load", function(){
         });
     })
 
-    // 어바웃 영역 슬라이더
-    
-    const swiper = new Swiper(".products-slider", {
+    // 어바웃 & 블로그 영역 공통 슬라이더    
+    const swiper = new Swiper(".swiper", {
         
         loop:true,        
 
@@ -78,6 +77,38 @@ window.addEventListener("load", function(){
      
     lightGallery(lightBox,{
         thumbnail: true,
+    });
+
+    // 리뷰 영역 슬라이더
+    const reviewSwiper = new Swiper(".reviews_slider", {
+        
+        loop:true,
+
+        autoplay: {
+            delay: 5000,
+        },    
+
+        grabCursor: true,
+
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            450: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            991: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1200: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+            },
+        }
+        
     });
     
     window.addEventListener("scroll", () => {

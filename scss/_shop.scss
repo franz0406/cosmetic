@@ -85,19 +85,10 @@
     }
 }
 
-.swiper-pagination-bullet{ // 페이저
-    width:1.2rem;
-    height:1.2rem;
-    border-radius: .6rem;
-}
-.swiper-pagination-bullet-active{
-    width:2.2rem;
-    background: $pink;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after{ // 슬라이더 이전, 다음 버튼
+.swiper-button-next, 
+.swiper-button-prev{
     color:$pink;
-    font-size: 4rem;
     font-weight: bold;
 }
+
+
